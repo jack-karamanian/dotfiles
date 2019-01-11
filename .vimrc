@@ -25,29 +25,6 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
 " vim-code-dark
 colorscheme codedark
 
-" NERDTree
-"autocmd vimenter * NERDTree
-
-"jmap <C-n> :NERDTreeToggle<CR>
-
-
-" syntasitc
-
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-let g:syntastic_cpp_checkers = ['clang_check']
-let g:clang_snippets_engine = 'clang_complete'
-
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exe = 'bash -c ' . "'npx eslint \"$@\"'" . ' "x"'
-
 " ale
 let g:ale_linters = {
       \ 'javascript': ['eslint'],
